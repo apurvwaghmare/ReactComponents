@@ -1,0 +1,8 @@
+.hero {
+    /* background-color: green; */
+    height: 50vh;
+}
+.shoes {
+    display: flex;
+    justify-content: space-between;
+}
