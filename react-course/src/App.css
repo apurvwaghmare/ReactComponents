@@ -11,11 +11,3 @@
     padding:50px
 }
 
-.app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    background-color: black;
-}
