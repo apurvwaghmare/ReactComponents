@@ -8,6 +8,7 @@ import shoe2 from "./Assets/shoe2.png";
 import shoe3 from "./Assets/shoe3.png";
 import shoe4 from "./Assets/shoe4.png";
 import shoe5 from "./Assets/shoe5.png";
+import Hooks from "./Components/Hooks";
 const App = () => {
 
     // const data = [{title:"Blktop Rider Suede Sneakers", price:"8099", img:shoes},
@@ -44,10 +45,12 @@ const App = () => {
 
     return (
         <div className="app">
-            <Header/>
+
+
+            
+            {/* <Header/>
             <div className = "shoe">
 
-                {/* using map function  */}
                 {
                     data.map((item) => {
                         return (
@@ -57,7 +60,10 @@ const App = () => {
                 }
 
             </div>
-            <Footer/>
+            <Footer/> */}
+            
+            
+            <Hooks/>
         </div>
     );
 };
