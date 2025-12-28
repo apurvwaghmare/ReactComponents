@@ -1,46 +1,78 @@
-// import React from "react";
-// import {useState} from "react";
-
-// const Hooks = () => {
-
-//     const[counter, setCount] = useState(0);
-
-//     const handlePlus= () => {
-//         setCount(counter + 1);
-//     };
-
-//     return (
-//         <div>
-//             <p>number {counter}</p>
-//             <button onClick={handlePlus}>add</button>
-//         </div>
-//     )
-// }
-
-// export default Hooks;
-
 import React, { useState } from "react";
 
 const Hooks = () => {
-    const [counter, setCount] = useState(0);
+    // const num = [1, 2, 3];
+    // const [number, setNumber] = useState(num);
 
-    const handlePlus = () => {
-        setCount(prev => prev + 1);
-    };
+    // const handleAdd = () => {
+    //     setNumber([...number, 4, 5, 6])
+    // }
 
-    const [name, setName] = useState("apurv");
-    const changeName= () => {
-        setName(prev => prev === "apurv" ? "asmi" : "apurv");
-    };
+    // const user = {
+    //     name: "apurv",
+    //     age: 22
+    // };
 
+    // const [data, setData] = useState([
+    //     {id: 0, name: "apurv", age: 22},
+    //     {id: 1, name: "asmi", age: 18},
+    //     {id: 2, name: "prasiddha", age: 18},
+    //     {id: 3, name: "kaustubh", age: 16},
+
+    // ]);
+    // const handleChange = () => {
+    //     setData(prev => 
+    //         prev.map((item, index) => 
+    //             index === 2 ? {...item, name:"arun", age:60} : item
+    //         )
+    //     );
+    // };
+
+    const [isOn, setIsOn] = useState(false);
+    const handleChange = () => {
+        setIsOn(!isOn);
+    }
     return (
         <div>
-            <h1>{name}</h1>
-            <p>number {counter}</p>
-            <button onClick={handlePlus}>add</button>
-            <button onClick={changeName}>changeName</button>
+            {/* <p>number {number}</p>
+            <button onClick={handleAdd}>Add</button> */}
+            {/* {data.map((user, idx) => (
+                <p key={idx}>
+                    {user.name} - {user.age}
+                </p>
+            ))} */}
+
+            {/* <p>My name is {data[2].name} and my age is {data[2].age}.</p> */}
+            {/* <button onClick={handleChange}>update User</button> */}
+
+            <p>{isOn ? "Yes" : "No"}</p>
+            <button onClick={handleChange}>check</button>
         </div>
-    );
+    )
 };
 
 export default Hooks;
+
+
+
+
+
+
+
+
+
+
+// const num = [1, 2, 3];
+// const num2 = [...num, 4, 5, 6, 7];
+// console.log(num2);
+
+// const user = {
+//     name: "apurv", 
+//     age: 22
+// };
+
+// const updatedUser = {
+//     ...user, 
+//     age: 23
+// };
+// console.log(updatedUser);
