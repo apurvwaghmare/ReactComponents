@@ -9,6 +9,7 @@ import shoe3 from "./Assets/shoe3.png";
 import shoe4 from "./Assets/shoe4.png";
 import shoe5 from "./Assets/shoe5.png";
 import Hooks from "./Components/Hooks";
+import UseRefHooks from "./Components/UseRefHooks";
 const App = () => {
 
     // const data = [{title:"Blktop Rider Suede Sneakers", price:"8099", img:shoes},
@@ -64,6 +65,7 @@ const App = () => {
             
             
             <Hooks/>
+            <UseRefHooks/>
         </div>
     );
 };

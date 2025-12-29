@@ -28,10 +28,10 @@ const Hooks = () => {
     //     );
     // };
 
-    const [isOn, setIsOn] = useState(false);
-    const handleChange = () => {
-        setIsOn(!isOn);
-    }
+    // const [isOn, setIsOn] = useState(false);
+    // const handleChange = () => {
+    //     setIsOn(!isOn);
+    // }
     return (
         <div>
             {/* <p>number {number}</p>
@@ -45,8 +45,8 @@ const Hooks = () => {
             {/* <p>My name is {data[2].name} and my age is {data[2].age}.</p> */}
             {/* <button onClick={handleChange}>update User</button> */}
 
-            <p>{isOn ? "Yes" : "No"}</p>
-            <button onClick={handleChange}>check</button>
+            {/* <p>{isOn ? "Yes" : "No"}</p>
+            <button onClick={handleChange}>check</button> */}
         </div>
     )
 };
